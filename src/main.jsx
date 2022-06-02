@@ -12,7 +12,8 @@ ReactDOM.render(
   <BrowserRouter>
     <Routes>
       <Route path="/" element={<App />}>
-        <Route path="expenses" element={<Expenses />} />
+        <Route path="expenses" element={<Expenses amount={100} />} />
+        <Route path="expensive" element={<Expenses amount={1000000} />} />
         <Route path="invoices" element={<Invoices />}>
           <Route
             index
